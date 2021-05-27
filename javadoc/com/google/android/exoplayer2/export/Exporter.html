@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10};
 var tabs = {65535:["t0","所有方法"],1:["t1","静态方法"],2:["t2","实例方法"],8:["t4","具体方法"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -45,7 +45,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../index-all.html">索引</a></li>
 <li><a href="../../../../../help-doc.html">帮助</a></li>
 </ul>
-<div class="aboutLanguage">EditorPlayer v2.1 </div>
+<div class="aboutLanguage">EditorPlayer v2.2 </div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -135,13 +135,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <th class="colLast" scope="col">方法和说明</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#cancel--">cancel</a></span>()</code>
 <div class="block">取消</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#export-com.google.android.exoplayer2.export.ExportOptions-android.content.Context-androidx.lifecycle.LifecycleOwner-">export</a></span>(<a href="../../../../../com/google/android/exoplayer2/export/ExportOptions.html" title="com.google.android.exoplayer2.export中的类">ExportOptions</a>&nbsp;options,
       <a href="https://developer.android.google.cn/reference/android/content/Context.html" title="android.content中的类或接口" target="_top">Context</a>&nbsp;context,
       androidx.lifecycle.LifecycleOwner&nbsp;lifecycleOwner)</code>
@@ -153,6 +153,12 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#getInstance--">getInstance</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#getState--">getState</a></span>()</code>
+<div class="block">当前状态</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#release--">release</a></span>()</code>
 <div class="block">销毁</div>
@@ -186,15 +192,17 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <ul class="blockList">
 <li class="blockList">
 <h4>export</h4>
-<pre>public&nbsp;void&nbsp;export(<a href="../../../../../com/google/android/exoplayer2/export/ExportOptions.html" title="com.google.android.exoplayer2.export中的类">ExportOptions</a>&nbsp;options,
-                   <a href="https://developer.android.google.cn/reference/android/content/Context.html" title="android.content中的类或接口" target="_top">Context</a>&nbsp;context,
-                   androidx.lifecycle.LifecycleOwner&nbsp;lifecycleOwner)</pre>
+<pre>public&nbsp;int&nbsp;export(<a href="../../../../../com/google/android/exoplayer2/export/ExportOptions.html" title="com.google.android.exoplayer2.export中的类">ExportOptions</a>&nbsp;options,
+                  <a href="https://developer.android.google.cn/reference/android/content/Context.html" title="android.content中的类或接口" target="_top">Context</a>&nbsp;context,
+                  androidx.lifecycle.LifecycleOwner&nbsp;lifecycleOwner)</pre>
 <div class="block">导出</div>
 <dl>
 <dt><span class="paramLabel">参数:</span></dt>
 <dd><code>options</code> - <a href="../../../../../com/google/android/exoplayer2/export/ExportOptions.html" title="com.google.android.exoplayer2.export中的类"><code>ExportOptions</code></a> 导出配置项</dd>
 <dd><code>context</code> - Context</dd>
 <dd><code>lifecycleOwner</code> - <code>LifecycleOwner</code> or null</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>0:success -1:导出正在进行中 -2:参数异常</dd>
 </dl>
 </li>
 </ul>
@@ -204,8 +212,32 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <ul class="blockList">
 <li class="blockList">
 <h4>cancel</h4>
-<pre>public&nbsp;void&nbsp;cancel()</pre>
+<pre>public&nbsp;int&nbsp;cancel()
+           throws <a href="https://developer.android.google.cn/reference/java/lang/InterruptedException.html" title="java.lang中的类或接口" target="_top">InterruptedException</a></pre>
 <div class="block">取消</div>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>0:success -1:导出未开始</dd>
+<dt><span class="throwsLabel">抛出:</span></dt>
+<dd><code><a href="https://developer.android.google.cn/reference/java/lang/InterruptedException.html" title="java.lang中的类或接口" target="_top">InterruptedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getState--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getState</h4>
+<pre>public&nbsp;int&nbsp;getState()</pre>
+<div class="block">当前状态</div>
+<dl>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#STATE_NOT_STARTED"><code>STATE_NOT_STARTED</code></a>、
+          <a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#STATE_PROCESSING"><code>STATE_PROCESSING</code></a>、
+          <a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#STATE_COMPLETED"><code>STATE_COMPLETED</code></a>、
+          <a href="../../../../../com/google/android/exoplayer2/export/Exporter.html#STATE_CANCELED"><code>STATE_CANCELED</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="release--">
