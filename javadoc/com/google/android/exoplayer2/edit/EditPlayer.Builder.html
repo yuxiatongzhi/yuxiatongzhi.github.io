@@ -45,7 +45,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../index-all.html">索引</a></li>
 <li><a href="../../../../../help-doc.html">帮助</a></li>
 </ul>
-<div class="aboutLanguage">EditorPlayer v2.2 </div>
+<div class="aboutLanguage">EditorPlayer v2.2.5 </div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -190,7 +190,9 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html#setSurface-android.view.Surface-int-int-boolean-">setSurface</a></span>(<a href="https://developer.android.google.cn/reference/android/view/Surface.html" title="android.view中的类或接口" target="_top">Surface</a>&nbsp;surface,
           int&nbsp;width,
           int&nbsp;height,
-          boolean&nbsp;recordable)</code>&nbsp;</td>
+          boolean&nbsp;recordable)</code>
+<div class="block">用户无需调用此接口</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html" title="com.google.android.exoplayer2.edit中的类">EditPlayer.Builder</a></code></td>
@@ -201,7 +203,8 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html" title="com.google.android.exoplayer2.edit中的类">EditPlayer.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html#setTextureView-android.view.TextureView-">setTextureView</a></span>(<a href="https://developer.android.google.cn/reference/android/view/TextureView.html" title="android.view中的类或接口" target="_top">TextureView</a>&nbsp;textureView)</code>
-<div class="block">使用 <a href="https://developer.android.google.cn/reference/android/view/TextureView.html" title="android.view中的类或接口" target="_top"><code>TextureView</code></a> 作为播放器的渲染输出</div>
+<div class="block">使用 <a href="https://developer.android.google.cn/reference/android/view/TextureView.html" title="android.view中的类或接口"><code>TextureView</code></a> 作为播放器的渲染输出，和 <a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html#setSurfaceView-android.view.SurfaceView-" target="_top"><code>setSurfaceView(SurfaceView)</code></a>
+ 接口作用一样，只需设置一个接口</div>
 </td>
 </tr>
 </table>
@@ -302,7 +305,8 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <h4>setTextureView</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html" title="com.google.android.exoplayer2.edit中的类">EditPlayer.Builder</a>&nbsp;setTextureView(@NonNull
                                          <a href="https://developer.android.google.cn/reference/android/view/TextureView.html" title="android.view中的类或接口" target="_top">TextureView</a>&nbsp;textureView)</pre>
-<div class="block">使用 <a href="https://developer.android.google.cn/reference/android/view/TextureView.html" title="android.view中的类或接口" target="_top"><code>TextureView</code></a> 作为播放器的渲染输出</div>
+<div class="block">使用 <a href="https://developer.android.google.cn/reference/android/view/TextureView.html" title="android.view中的类或接口"><code>TextureView</code></a> 作为播放器的渲染输出，和 <a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html#setSurfaceView-android.view.SurfaceView-" target="_top"><code>setSurfaceView(SurfaceView)</code></a>
+ 接口作用一样，只需设置一个接口</div>
 <dl>
 <dt><span class="paramLabel">参数:</span></dt>
 <dd><code>textureView</code> - <a href="https://developer.android.google.cn/reference/android/view/TextureView.html" title="android.view中的类或接口" target="_top"><code>TextureView</code></a></dd>
@@ -356,6 +360,16 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
                                      int&nbsp;width,
                                      int&nbsp;height,
                                      boolean&nbsp;recordable)</pre>
+<div class="block">用户无需调用此接口</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>surface</code> - 渲染 <a href="https://developer.android.google.cn/reference/android/view/Surface.html" title="android.view中的类或接口" target="_top"><code>Surface</code></a></dd>
+<dd><code>width</code> - width</dd>
+<dd><code>height</code> - height</dd>
+<dd><code>recordable</code> - true:转码录制模式</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/EditPlayer.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>EditPlayer.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setExportOptions-com.google.android.exoplayer2.export.ExportOptions-">

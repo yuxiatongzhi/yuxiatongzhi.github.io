@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
-var tabs = {65535:["t0","所有方法"],2:["t2","实例方法"],8:["t4","具体方法"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":42,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":42,"i16":10,"i17":10,"i18":10};
+var tabs = {65535:["t0","所有方法"],2:["t2","实例方法"],8:["t4","具体方法"],32:["t6","已过时的方法"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -45,7 +45,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../index-all.html">索引</a></li>
 <li><a href="../../../../../help-doc.html">帮助</a></li>
 </ul>
-<div class="aboutLanguage">EditorPlayer v2.2 </div>
+<div class="aboutLanguage">EditorPlayer v2.2.5 </div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -146,7 +146,7 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 </a>
 <h3>方法概要</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="方法概要表, 列表方法和解释">
-<caption><span id="t0" class="activeTableTab"><span>所有方法</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">实例方法</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">具体方法</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>所有方法</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">实例方法</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">具体方法</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">已过时的方法</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">限定符和类型</th>
 <th class="colLast" scope="col">方法和说明</th>
@@ -161,11 +161,15 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setDuration-long-">setDuration</a></span>(long&nbsp;duration)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setDuration-long-">setDuration</a></span>(long&nbsp;duration)</code>
+<div class="block">本clip的播放时长，<b>必选项</b></div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setHeight-int-">setHeight</a></span>(int&nbsp;height)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setHeight-int-">setHeight</a></span>(int&nbsp;height)</code>
+<div class="block">视频画面的height</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
@@ -173,7 +177,9 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setMediaType-com.google.android.exoplayer2.edit.MediaType-">setMediaType</a></span>(<a href="../../../../../com/google/android/exoplayer2/edit/MediaType.html" title="com.google.android.exoplayer2.edit中的枚举">MediaType</a>&nbsp;mediaType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setMediaType-com.google.android.exoplayer2.edit.MediaType-">setMediaType</a></span>(<a href="../../../../../com/google/android/exoplayer2/edit/MediaType.html" title="com.google.android.exoplayer2.edit中的枚举">MediaType</a>&nbsp;mediaType)</code>
+<div class="block">媒体类型</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
@@ -184,40 +190,59 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setMusicSource-java.lang.String-float-long-long-">setMusicSource</a></span>(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;source,
               float&nbsp;volume,
               long&nbsp;startTime,
-              long&nbsp;duration)</code>&nbsp;</td>
+              long&nbsp;duration)</code>
+<div class="block"><span class="deprecatedLabel">已过时。</span>&nbsp;</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setRotation-float-">setRotation</a></span>(float&nbsp;rotation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setRotation-float-">setRotation</a></span>(float&nbsp;rotation)</code>
+<div class="block">画面旋转degree</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setScale-float-">setScale</a></span>(float&nbsp;scale)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setScale-float-">setScale</a></span>(float&nbsp;scale)</code>
+<div class="block">缩放比例</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setSource-java.lang.String-">setSource</a></span>(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;s)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setSource-java.lang.String-">setSource</a></span>(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;s)</code>
+<div class="block">设置有效的媒体文件路径,<b>必选项</b></div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setSpeed-float-">setSpeed</a></span>(float&nbsp;speed)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setSpeed-float-">setSpeed</a></span>(float&nbsp;speed)</code>
+<div class="block">本段的播放速度</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setStartTime-long-">setStartTime</a></span>(long&nbsp;time)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setStartTime-long-">setStartTime</a></span>(long&nbsp;time)</code>
+<div class="block">设置分段开始播放的位置,
+ <b>必选项</b></div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setTranslate-float-float-">setTranslate</a></span>(float&nbsp;x,
-            float&nbsp;y)</code>&nbsp;</td>
+            float&nbsp;y)</code>
+<div class="block">平移</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setVideoRotation-int-">setVideoRotation</a></span>(int&nbsp;rotation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setVideoRotation-int-">setVideoRotation</a></span>(int&nbsp;rotation)</code>
+<div class="block">metadata里记录的视频画面的角度</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setVideoSource-int-">setVideoSource</a></span>(int&nbsp;videoSource)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setVideoSource-int-">setVideoSource</a></span>(int&nbsp;videoSource)</code>
+<div class="block"><span class="deprecatedLabel">已过时。</span>&nbsp;</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
@@ -225,11 +250,15 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setVolume-float-">setVolume</a></span>(float&nbsp;volume)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setVolume-float-">setVolume</a></span>(float&nbsp;volume)</code>
+<div class="block">设备本clip的音量</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setWidth-int-">setWidth</a></span>(int&nbsp;width)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html#setWidth-int-">setWidth</a></span>(int&nbsp;width)</code>
+<div class="block">视频画面的width</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -285,7 +314,15 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <ul class="blockList">
 <li class="blockList">
 <h4>setSource</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setSource(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;s)</pre>
+<pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setSource(@NonNull
+                              <a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;s)</pre>
+<div class="block">设置有效的媒体文件路径,<b>必选项</b></div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>s</code> - 有效的媒体文件路径</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setStartTime-long-">
@@ -295,6 +332,14 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setStartTime</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setStartTime(long&nbsp;time)</pre>
+<div class="block">设置分段开始播放的位置,
+ <b>必选项</b></div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>time</code> - 分段开始时间，单位 毫秒 ms</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setDuration-long-">
@@ -304,6 +349,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setDuration</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setDuration(long&nbsp;duration)</pre>
+<div class="block">本clip的播放时长，<b>必选项</b></div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>duration</code> - 需大于0</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setDisplayMode-com.google.android.exoplayer2.edit.VideoDisplayMode-">
@@ -322,6 +374,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setMediaType</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setMediaType(<a href="../../../../../com/google/android/exoplayer2/edit/MediaType.html" title="com.google.android.exoplayer2.edit中的枚举">MediaType</a>&nbsp;mediaType)</pre>
+<div class="block">媒体类型</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>mediaType</code> - <a href="../../../../../com/google/android/exoplayer2/edit/MediaType.html" title="com.google.android.exoplayer2.edit中的枚举"><code>MediaType</code></a></dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setVolume-float-">
@@ -331,6 +390,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setVolume</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setVolume(float&nbsp;volume)</pre>
+<div class="block">设备本clip的音量</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>volume</code> - 音量 0 ~ 1.0f</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setSpeed-float-">
@@ -340,6 +406,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setSpeed</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setSpeed(float&nbsp;speed)</pre>
+<div class="block">本段的播放速度</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>speed</code> - 0.2 ~ 8.0f</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setRotation-float-">
@@ -349,6 +422,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setRotation</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setRotation(float&nbsp;rotation)</pre>
+<div class="block">画面旋转degree</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>rotation</code> - [0 | 90f | 180f | 270f]</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setScale-float-">
@@ -358,6 +438,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setScale</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setScale(float&nbsp;scale)</pre>
+<div class="block">缩放比例</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>scale</code> - </dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setTranslate-float-float-">
@@ -368,6 +455,14 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <h4>setTranslate</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setTranslate(float&nbsp;x,
                                  float&nbsp;y)</pre>
+<div class="block">平移</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>x</code> - 相对于画布的x坐标</dd>
+<dd><code>y</code> - 相对于画布的Y坐标</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setMusicSource-java.lang.String-float-long-long-">
@@ -376,10 +471,12 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <ul class="blockList">
 <li class="blockList">
 <h4>setMusicSource</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setMusicSource(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;source,
-                                   float&nbsp;volume,
-                                   long&nbsp;startTime,
-                                   long&nbsp;duration)</pre>
+<pre><a href="https://developer.android.google.cn/reference/java/lang/Deprecated.html" title="java.lang中的类或接口" target="_top">@Deprecated</a>
+public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setMusicSource(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;source,
+                                                float&nbsp;volume,
+                                                long&nbsp;startTime,
+                                                long&nbsp;duration)</pre>
+<div class="block"><span class="deprecatedLabel">已过时。</span>&nbsp;</div>
 </li>
 </ul>
 <a name="setMimeType-java.lang.String-">
@@ -406,7 +503,9 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <ul class="blockList">
 <li class="blockList">
 <h4>setVideoSource</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setVideoSource(int&nbsp;videoSource)</pre>
+<pre><a href="https://developer.android.google.cn/reference/java/lang/Deprecated.html" title="java.lang中的类或接口" target="_top">@Deprecated</a>
+public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setVideoSource(int&nbsp;videoSource)</pre>
+<div class="block"><span class="deprecatedLabel">已过时。</span>&nbsp;</div>
 </li>
 </ul>
 <a name="setWidth-int-">
@@ -416,6 +515,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setWidth</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setWidth(int&nbsp;width)</pre>
+<div class="block">视频画面的width</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>width</code> - 视频分辨率width</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setHeight-int-">
@@ -425,6 +531,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setHeight</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setHeight(int&nbsp;height)</pre>
+<div class="block">视频画面的height</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>height</code> - 视频分辨率height</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="setVideoRotation-int-">
@@ -434,6 +547,13 @@ extends <a href="https://developer.android.google.cn/reference/java/lang/Object.
 <li class="blockList">
 <h4>setVideoRotation</h4>
 <pre>public&nbsp;<a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类">Clip.Builder</a>&nbsp;setVideoRotation(int&nbsp;rotation)</pre>
+<div class="block">metadata里记录的视频画面的角度</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>rotation</code> - 视频文件元数据里的记录的视频旋转</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd><a href="../../../../../com/google/android/exoplayer2/edit/Clip.Builder.html" title="com.google.android.exoplayer2.edit中的类"><code>Clip.Builder</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="build--">
