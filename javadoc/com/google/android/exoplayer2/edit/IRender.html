@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":18,"i8":6,"i9":18,"i10":6,"i11":6,"i12":6,"i13":6,"i14":18,"i15":6,"i16":6,"i17":6,"i18":6,"i19":18,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":18,"i35":6,"i36":6,"i37":6,"i38":6,"i39":18};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":18,"i8":6,"i9":18,"i10":6,"i11":6,"i12":6,"i13":6,"i14":18,"i15":6,"i16":6,"i17":6,"i18":18,"i19":6,"i20":18,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":18,"i36":6,"i37":6,"i38":6,"i39":6,"i40":18};
 var tabs = {65535:["t0","所有方法"],2:["t2","实例方法"],4:["t3","抽象方法"],16:["t5","默认方法"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -45,7 +45,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../index-all.html">索引</a></li>
 <li><a href="../../../../../help-doc.html">帮助</a></li>
 </ul>
-<div class="aboutLanguage">EditorPlayer v2.2.5 </div>
+<div class="aboutLanguage">EditorPlayer v2.4.1 </div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -256,25 +256,31 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>default int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#resetSurfaceView-android.view.SurfaceHolder-">resetSurfaceView</a></span>(<a href="https://developer.android.google.cn/reference/android/view/SurfaceHolder.html" title="android.view中的类或接口" target="_top">SurfaceHolder</a>&nbsp;surfaceHolder)</code>
+<div class="block">重新设置 <a href="https://developer.android.google.cn/reference/android/view/SurfaceView.html" title="android.view中的类或接口" target="_top"><code>SurfaceView</code></a>,这会重建GL绘制使用的Surface，请谨慎使用</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setAnimatedBackground-int-java.lang.String-">setAnimatedBackground</a></span>(int&nbsp;clipIndex,
                      <a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;dir)</code>
 <div class="block">应用一个"动图序列"图解压文件夹</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>default int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setAnimatedBackground-java.lang.String-">setAnimatedBackground</a></span>(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;dir)</code>
 <div class="block">应用一个"动图序列"图解压文件夹</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setBackgroundBitmap-java.lang.String-">setBackgroundBitmap</a></span>(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;bitmap)</code>
 <div class="block">播放器 设置背景</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setBackgroundBitmap-java.lang.String-boolean-boolean-">setBackgroundBitmap</a></span>(<a href="https://developer.android.google.cn/reference/java/lang/String.html" title="java.lang中的类或接口" target="_top">String</a>&nbsp;bitmap,
                    boolean&nbsp;useBitmap,
@@ -282,14 +288,14 @@ var activeTableTab = "activeTableTab";
 <div class="block">设置背景</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setBackgroundSize-int-int-">setBackgroundSize</a></span>(int&nbsp;width,
                  int&nbsp;height)</code>
 <div class="block">设置画布canvas背景大小</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setBackgroundSize-int-int-boolean-">setBackgroundSize</a></span>(int&nbsp;width,
                  int&nbsp;height,
@@ -297,33 +303,33 @@ var activeTableTab = "activeTableTab";
 <div class="block">设置画布canvas背景大小</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setMaxPlayDuration-long-">setMaxPlayDuration</a></span>(long&nbsp;duration)</code>
 <div class="block">指定最大播放时长</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setRotationAngle-float-">setRotationAngle</a></span>(float&nbsp;angle)</code>
 <div class="block">设置视频旋转角度</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setRotationAngle-float-boolean-">setRotationAngle</a></span>(float&nbsp;angle,
                 boolean&nbsp;render)</code>
 <div class="block">设置视频旋转角度</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setRotationAngle-int-float-">setRotationAngle</a></span>(int&nbsp;clipIndex,
                 float&nbsp;angle)</code>
 <div class="block">设置视频旋转角度</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setRotationAngle-int-float-boolean-">setRotationAngle</a></span>(int&nbsp;clipIndex,
                 float&nbsp;angle,
@@ -331,27 +337,27 @@ var activeTableTab = "activeTableTab";
 <div class="block">设置视频旋转角度</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setScale-float-">setScale</a></span>(float&nbsp;scale)</code>
 <div class="block">设置视频缩放</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setScale-float-boolean-">setScale</a></span>(float&nbsp;scale,
         boolean&nbsp;render)</code>
 <div class="block">设置视频缩放</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setScale-int-float-">setScale</a></span>(int&nbsp;clipIndex,
         float&nbsp;scale)</code>
 <div class="block">设置视频缩放</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setScale-int-float-boolean-">setScale</a></span>(int&nbsp;clipIndex,
         float&nbsp;scale,
@@ -359,14 +365,14 @@ var activeTableTab = "activeTableTab";
 <div class="block">置视频缩放</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setSpeed-int-float-">setSpeed</a></span>(int&nbsp;clipIndex,
         float&nbsp;speed)</code>
 <div class="block">设置播放速度</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>default int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setTransition-int-int-int-boolean-">setTransition</a></span>(int&nbsp;model,
              int&nbsp;width,
@@ -375,14 +381,14 @@ var activeTableTab = "activeTableTab";
 <div class="block">设置转场模式,内部调用</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setTranslate-float-float-">setTranslate</a></span>(float&nbsp;x,
             float&nbsp;y)</code>
 <div class="block">设置视频平移</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setTranslate-float-float-boolean-">setTranslate</a></span>(float&nbsp;x,
             float&nbsp;y,
@@ -390,21 +396,21 @@ var activeTableTab = "activeTableTab";
 <div class="block">设置视频平移</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setVideoSize-int-int-">setVideoSize</a></span>(int&nbsp;width,
             int&nbsp;height)</code>
 <div class="block">设置视频分辨率</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#setVolume-int-float-">setVolume</a></span>(int&nbsp;clipIndex,
          float&nbsp;vol)</code>
 <div class="block">在分段信息里记录给分段设置的音量</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IRender.html#updateTransitionProgress-float-">updateTransitionProgress</a></span>(float&nbsp;progress)</code>
 <div class="block">转场进度,内部调用</div>
@@ -1103,6 +1109,22 @@ var activeTableTab = "activeTableTab";
 <dd><code>outputFile</code> - 导出文件的完整路径</dd>
 <dt><span class="returnLabel">返回:</span></dt>
 <dd>int 0:success -1:配置文件字符异常  -2:写入文件出错</dd>
+</dl>
+</li>
+</ul>
+<a name="resetSurfaceView-android.view.SurfaceHolder-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resetSurfaceView</h4>
+<pre>default&nbsp;int&nbsp;resetSurfaceView(<a href="https://developer.android.google.cn/reference/android/view/SurfaceHolder.html" title="android.view中的类或接口" target="_top">SurfaceHolder</a>&nbsp;surfaceHolder)</pre>
+<div class="block">重新设置 <a href="https://developer.android.google.cn/reference/android/view/SurfaceView.html" title="android.view中的类或接口" target="_top"><code>SurfaceView</code></a>,这会重建GL绘制使用的Surface，请谨慎使用</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>surfaceHolder</code> - <a href="https://developer.android.google.cn/reference/android/view/SurfaceHolder.html" title="android.view中的类或接口" target="_top"><code>SurfaceHolder</code></a></dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>-1:fail 0:Success</dd>
 </dl>
 </li>
 </ul>

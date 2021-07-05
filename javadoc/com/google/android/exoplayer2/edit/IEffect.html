@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var methods = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
 var tabs = {65535:["t0","所有方法"],2:["t2","实例方法"],4:["t3","抽象方法"],16:["t5","默认方法"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -45,7 +45,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../index-all.html">索引</a></li>
 <li><a href="../../../../../help-doc.html">帮助</a></li>
 </ul>
-<div class="aboutLanguage">EditorPlayer v2.2.5 </div>
+<div class="aboutLanguage">EditorPlayer v2.4.1 </div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -139,12 +139,28 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#onDrawFrame-int-float:A-">onDrawFrame</a></span>(int&nbsp;textureId,
+           float[]&nbsp;txtMatrix)</code>
+<div class="block">绘制当前纹理</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#onDrawFrame-int-float:A-int-float:A-">onDrawFrame</a></span>(int&nbsp;fromTextureId,
+           float[]&nbsp;fromMatrix,
+           int&nbsp;toTextureId,
+           float[]&nbsp;toMatrix)</code>
+<div class="block">转场时，2帧画面合成一帧画面</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#onDrawFrame-int-int-">onDrawFrame</a></span>(int&nbsp;fromTextureId,
            int&nbsp;toTextureId)</code>
 <div class="block">转场时，2帧画面合成一帧画面</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#onDrawFrame-int-int-int-">onDrawFrame</a></span>(int&nbsp;textureId,
            int&nbsp;width,
@@ -152,7 +168,16 @@ var activeTableTab = "activeTableTab";
 <div class="block">绘制纹理</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#onDrawFrame-int-int-int-float:A-">onDrawFrame</a></span>(int&nbsp;textureId,
+           int&nbsp;width,
+           int&nbsp;height,
+           float[]&nbsp;txtMatrix)</code>
+<div class="block">绘制纹理</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#setTranslate-int-float-float-">setTranslate</a></span>(int&nbsp;clipIndex,
             float&nbsp;x,
@@ -160,7 +185,7 @@ var activeTableTab = "activeTableTab";
 <div class="block">设置视频平移</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#setTranslate-int-float-float-boolean-">setTranslate</a></span>(int&nbsp;clipIndex,
             float&nbsp;x,
@@ -169,14 +194,14 @@ var activeTableTab = "activeTableTab";
 <div class="block">设置视频平移</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#setVideoScaleRatio-float-float-">setVideoScaleRatio</a></span>(float&nbsp;horizontal,
                   float&nbsp;vertical)</code>
 <div class="block">设置视频画面在背景画布上的缩放比</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/google/android/exoplayer2/edit/IEffect.html#setVideoScaleRatio-float-float-boolean-">setVideoScaleRatio</a></span>(float&nbsp;horizontal,
                   float&nbsp;vertical,
@@ -303,6 +328,24 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
+<a name="onDrawFrame-int-float:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onDrawFrame</h4>
+<pre>int&nbsp;onDrawFrame(int&nbsp;textureId,
+                float[]&nbsp;txtMatrix)</pre>
+<div class="block">绘制当前纹理</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>textureId</code> - 纹理ID</dd>
+<dd><code>txtMatrix</code> - 应用在纹理的模型矩阵</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>int - 处理后的纹理ID</dd>
+</dl>
+</li>
+</ul>
 <a name="onDrawFrame-int-int-int-">
 <!--   -->
 </a>
@@ -323,6 +366,28 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
+<a name="onDrawFrame-int-int-int-float:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onDrawFrame</h4>
+<pre>int&nbsp;onDrawFrame(int&nbsp;textureId,
+                int&nbsp;width,
+                int&nbsp;height,
+                float[]&nbsp;txtMatrix)</pre>
+<div class="block">绘制纹理</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>textureId</code> - 纹理ID</dd>
+<dd><code>width</code> - width</dd>
+<dd><code>height</code> - height</dd>
+<dd><code>txtMatrix</code> - 应用的矩阵</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>int - 处理后的纹理ID</dd>
+</dl>
+</li>
+</ul>
 <a name="onDrawFrame-int-int-">
 <!--   -->
 </a>
@@ -337,7 +402,29 @@ var activeTableTab = "activeTableTab";
 <dd><code>fromTextureId</code> - 前一段的视频帧纹理ID</dd>
 <dd><code>toTextureId</code> - 后一段的视频帧纹理ID</dd>
 <dt><span class="returnLabel">返回:</span></dt>
-<dd>合成之后的纹理ID</dd>
+<dd>int - 合成之后的纹理ID</dd>
+</dl>
+</li>
+</ul>
+<a name="onDrawFrame-int-float:A-int-float:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onDrawFrame</h4>
+<pre>int&nbsp;onDrawFrame(int&nbsp;fromTextureId,
+                float[]&nbsp;fromMatrix,
+                int&nbsp;toTextureId,
+                float[]&nbsp;toMatrix)</pre>
+<div class="block">转场时，2帧画面合成一帧画面</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>fromTextureId</code> - 前一段的视频帧纹理ID</dd>
+<dd><code>fromMatrix</code> - 前一段视频的校正矩阵</dd>
+<dd><code>toTextureId</code> - 后一段的视频帧纹理ID</dd>
+<dd><code>toMatrix</code> - 后一段视频的校正矩阵</dd>
+<dt><span class="returnLabel">返回:</span></dt>
+<dd>int - 合成之后的纹理ID</dd>
 </dl>
 </li>
 </ul>
